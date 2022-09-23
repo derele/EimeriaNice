@@ -31,7 +31,7 @@ dplyr::filter(Alice, OPG>0) %>%
     ggplot(aes(OPG, delta_ct_cewe_MminusE)) +
     scale_x_log10() +
     labs(x="Oocysts per gram feces",
-         y="delta CT (Mouse DNA - *Eimeria* DNA)")+
+         y="delta CT (*Eimeria* DNA -  Mouse DNA)")+
     geom_point() +
     geom_smooth(method="lm") +
     theme_minimal() +
